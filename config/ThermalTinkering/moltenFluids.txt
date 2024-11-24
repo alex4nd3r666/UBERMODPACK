@@ -1,0 +1,20 @@
+#This is a simple dump of all molten liquids, in raw form, with their block names (in brackets) and their localized names, in the format of:
+
+#FLUIDID 										  (FLUIDBLOCK)																	   = FLUIDLOCALIZEDNAME
+
+#ANY AND ALL CHANGES TO THIS FILE WILL BE REPLACED WHEN THIS FILE IS REGENERATED NEXT TIME THE GAME IS RUN. THIS IS FOR INFORMATIONAL PURPOSES ONLY AND IS NOT A CONFIG FILE!
+
+obsidian                                          (tconstruct:molten_obsidian)                                                     = Расплавленный обсидиан
+iron                                              (tconstruct:molten_iron)                                                         = Расплавленное железо
+pigiron                                           (tconstruct:molten_pigiron)                                                      = Расплавленная свиносталь
+knightslime                                       (tconstruct:molten_knightslime)                                                  = Расплавленная слизесталь
+cobalt                                            (tconstruct:molten_cobalt)                                                       = Расплавленный кобальт
+ardite                                            (tconstruct:molten_ardite)                                                       = Расплавленный ардит
+manyullyn                                         (tconstruct:molten_manyullyn)                                                    = Расплавленный маньюлин
+copper                                            (tconstruct:molten_copper)                                                       = Жидкая медь
+bronze                                            (tconstruct:molten_bronze)                                                       = Жидкая бронза
+lead                                              (tconstruct:molten_lead)                                                         = Жидкий свинец
+silver                                            (tconstruct:molten_silver)                                                       = Жидкое серебро
+electrum                                          (tconstruct:molten_electrum)                                                     = Жидкий электрум
+steel                                             (tconstruct:molten_steel)                                                        = Расплавленная сталь
+constantan                                        (immersiveengineering:molten_constantan)                                         = Расплавленный константан

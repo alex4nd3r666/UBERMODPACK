@@ -1,0 +1,187 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  TransformLoader (DynamicSurroundings-1.12.2-3.6.1.0.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  McLib core mod (mclib-2.4.2-1.12.2.jar)
+  ForgelinPlugin (Forgelin-1.8.4.jar)
+  Inventory Tweaks Coremod (inventorytweaks-1.64dev.151.jar)
+  MekanismCoremod (Mekanism-1.12.2-9.8.3.390.jar)
+  FutureMC (Future-MC-0.2.19.jar)
+  CTMCorePlugin (ctm-mc1.12.2-1.0.2.31.jar)
+  AppleCore (AppleCore-mc1.12.2-3.4.0.jar)
+  AFMLLoadingPlugin (AdvMachinesPatch-1.1.jar)
+  SecurityCraftLoadingPlugin (1.12.2-securitycraft-v1.9.11.jar)
+  XaeroWorldMapPlugin (XaerosWorldMap_1.38.4_Forge_1.12.jar)
+  SpartanWeaponry-MixinLoader (SpartanWeaponry-1.12.2-1.5.3.jar)
+  Techguns Core (techguns-1.12.2-2.0.2.0_pre3.2.jar)
+  PatcherPlugin (AdvSolarsPatch 1.2.1.jar)
+  TLSkinCapeHookLoader (tlskincape1.12.2-1.4.jar)
+  NWRTweak (redstonepaste_mc1.12_1.7.5.jar)
+  MovingWorldCore (movingworld_1.12_6.342.jar)
+  CreativePatchingLoader (creativecore_v1.10.71_mc1.12.2.jar)
+Contact their authors BEFORE contacting forge
+
+// Who set us up the TNT?
+
+Time: 11/24/24 4:45 PM
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: net/minecraft/world/World$2
+	at net.minecraft.world.World.func_190524_a(World.java:557)
+	at net.minecraft.world.World.func_175685_c(World.java:495)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.world.World.func_175656_a(World.java:425)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:122)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:129)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:129)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.World.func_189507_a(World.java:2682)
+	at net.minecraft.world.gen.feature.WorldGenLiquids.func_180709_b(WorldGenLiquids.java:88)
+	at net.minecraft.world.biome.BiomeDecorator.func_150513_a(BiomeDecorator.java:363)
+	at net.minecraft.world.biome.BiomeDecorator.func_180292_a(BiomeDecorator.java:88)
+	at net.minecraft.world.biome.Biome.func_180624_a(Biome.java:225)
+	at net.minecraft.world.biome.BiomeTaiga.func_180624_a(BiomeTaiga.java:94)
+	at biomesoplenty.common.world.ChunkGeneratorOverworldBOP.func_185931_b(ChunkGeneratorOverworldBOP.java:565)
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1019)
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157)
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344)
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:210)
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:233)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4240016144 bytes (4043 MB) / 10636754944 bytes (10144 MB) up to 10636754944 bytes (10144 MB)
+	JVM Flags: 7 total; -Xmx10120M -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	IntCache: cache: 6, tcache: 104, allocated: 0, tallocated: 0
+	FML: ~~ERROR~~ NoClassDefFoundError: net/minecraftforge/common/util/TextTable$1
+	Loaded coremods (and transformers): 
+TransformLoader (DynamicSurroundings-1.12.2-3.6.1.0.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+McLib core mod (mclib-2.4.2-1.12.2.jar)
+  mchorse.mclib.core.McLibCMClassTransformer
+ForgelinPlugin (Forgelin-1.8.4.jar)
+  
+Inventory Tweaks Coremod (inventorytweaks-1.64dev.151.jar)
+  invtweaks.forge.asm.ContainerTransformer
+MekanismCoremod (Mekanism-1.12.2-9.8.3.390.jar)
+  mekanism.coremod.KeybindingMigrationHelper
+FutureMC (Future-MC-0.2.19.jar)
+  thedarkcolour.futuremc.asm.CoreTransformer
+CTMCorePlugin (ctm-mc1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+AppleCore (AppleCore-mc1.12.2-3.4.0.jar)
+  squeek.applecore.asm.TransformerModuleHandler
+AFMLLoadingPlugin (AdvMachinesPatch-1.1.jar)
+  mods.su5ed.advmachinespatch.asm.AClassTransformer
+SecurityCraftLoadingPlugin (1.12.2-securitycraft-v1.9.11.jar)
+  
+XaeroWorldMapPlugin (XaerosWorldMap_1.38.4_Forge_1.12.jar)
+  xaero.map.core.transformer.ChunkTransformer
+  xaero.map.core.transformer.NetHandlerPlayClientTransformer
+  xaero.map.core.transformer.EntityPlayerTransformer
+  xaero.map.core.transformer.AbstractClientPlayerTransformer
+  xaero.map.core.transformer.WorldClientTransformer
+  xaero.map.core.transformer.EntityPlayerMPTransformer
+  xaero.map.core.transformer.PlayerListTransformer
+  xaero.map.core.transformer.SaveFormatTransformer
+  xaero.map.core.transformer.BiomeColorHelperTransformer
+  xaero.map.core.transformer.MinecraftServerTransformer
+  xaero.map.core.transformer.MinecraftTransformer
+SpartanWeaponry-MixinLoader (SpartanWeaponry-1.12.2-1.5.3.jar)
+  
+Techguns Core (techguns-1.12.2-2.0.2.0_pre3.2.jar)
+  techguns.core.TechgunsASMTransformer
+PatcherPlugin (AdvSolarsPatch 1.2.1.jar)
+  mods.su5ed.advsolarpatch.ClassTransformer
+TLSkinCapeHookLoader (tlskincape1.12.2-1.4.jar)
+  gloomyfolken.hooklib.minecraft.PrimaryClassTransformer
+NWRTweak (redstonepaste_mc1.12_1.7.5.jar)
+  net.fybertech.nwr.NWRTransformer
+MovingWorldCore (movingworld_1.12_6.342.jar)
+  
+CreativePatchingLoader (creativecore_v1.10.71_mc1.12.2.jar)
+  
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	AE2 Version: stable rv6-stable-7 for Forge 14.23.5.2768
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- chiselIntegration (Enabled/Not Forced)
+		- chiselsandbitsIntegration (Enabled/Not Forced)
+		- wailaIntegration (Enabled/Not Forced)
+
+	RebornCore: 
+		Plugin Engine: 0
+		RebornCore Version: 3.2.5.88
+		Runtime Debofucsation 1
+		RenderEngine: 1
+	AE2 Integration: IC2:ON, RC:OFF, MFR:OFF, Waila:ON, InvTweaks:ON, JEI:ON, Mekanism:ON, OpenComputers:OFF, THE_ONE_PROBE:OFF, TESLA:OFF, CRAFTTWEAKER:ON
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	OptiFine Version: OptiFine_1.12.2_HD_U_G5
+	OptiFine Build: 20210124-142939
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: Derivative-Main-d24.4.4.zip
+	OpenGlVersion: 4.6.0 NVIDIA 565.90
+	OpenGlRenderer: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8
