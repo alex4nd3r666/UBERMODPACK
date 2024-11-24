@@ -1,1 +1,19 @@
 cache/
+config/
+crash-reports/
+create-schematics/
+customnpcs/
+dark roleplay/
+journeymap/
+logs/
+natives/
+saves/
+scripts/
+snapshots-server/
+XaeroWorldMap/
+/crafttweaker.log
+/TLauncherAdditional.json
+/UBERMODPACK.jar
+/UBERMODPACK.json
+/usercache.json
+/usernamecache.json
